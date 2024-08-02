@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="cash-register.png" type="image/png">
+        <title>Cash Register</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <img src="cash-register.png" alt="cash-register">
+        <h1>Cash Register</h1>
+        <main>
+            <label for="cash-amount">Enter cash amount</label>
+            <input type="text" id="cash">
+            <button id="purchase-btn">Purchase</button>
+            <div id="change-due"></div>
+            <div class="cash-register-container">
+                <div class="cash-register-display" style="background-color: darkblue; width: 30px; height: 30px;"></div>
+                <div class="cash-register-body" style="background-color: darkblue; width: 100px; height: 100px;">
+                    <div class="cash-drawer" id="cash-drawer" style="background-color: aliceblue; height: 80px; width: 70px; left: 25px; top: 10px; position: relative;"></div>
+                </div>
+                
+            </div>
+        </main>
+        <script src="scripts.js"></script>
+    </body>
+</html>
