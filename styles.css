@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.register-image{
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+
+.change-due {
+    height: 400px;
+    width: 300px;
+    background-color: aliceblue;
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+}
+
+.cash-register-container {
+    margin: 20px;
+}
+.display-price{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 135px;
+    margin-left: auto;
+    
+}
+.cash-register-display{
+    background-color:  orange; 
+    width: 135px; 
+    height: 111px;
+    display: flex;
+    border: 10px solid black;
+    border-radius: 10px;
+    
+}
+#total-cost {
+    background-color: white;
+    height: 80px;
+    width: 104px;
+    margin: auto;
+    border: 10px solid black;
+    border-radius: 6px;
+    
+}
+
+.cash-register-neck{
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+}
+
+.cash-drawer {
+    height: 200px;
+    width: 300px;
+    background-color: orange;
+}

@@ -8,18 +8,23 @@
         <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
-        <img src="cash-register.png" alt="cash-register">
+        <img class="register-image" src="cash-register.png" alt="cash-register">
         <h1>Cash Register</h1>
         <main>
             <label for="cash-amount">Enter cash amount</label>
             <input type="text" id="cash">
             <button id="purchase-btn">Purchase</button>
-            <div id="change-due"></div>
+            <div id="change-due" class="change-due"></div>
             <div class="cash-register-container">
-                <div class="cash-register-display" id="register-display" style="background-color: green; width: 30px; height: 30px;"><p id="total-cost">Total: $3.26</p></div>
-                <div class="cash-register-body" style="background-color: darkblue; width: 100px; height: 100px;">
-                    <div class="cash-drawer" id="cash-drawer" style="background-color: aliceblue; height: 80px; width: 70px; left: 25px; top: 10px; position: relative;"></div>
+                <div class="display-price">
+                    <div class="cash-register-display" id="register-display"><span id="total-cost"></span></div>
+                    <div class="cash-register-neck"></div>
                 </div>
+                
+                <div class="cash-register-body">
+                    <div class="cash-drawer" id="cash-drawer" ></div><!--the cash drawer display that shows what is inside the cash drawer-->
+                </div>
+                <div class="drawer-opener"></div>
                 
             </div>
         </main>
