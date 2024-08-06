@@ -14,17 +14,34 @@
             <label for="cash-amount">Enter cash amount</label>
             <input type="text" id="cash">
             <button id="purchase-btn">Purchase</button>
-            <div id="change-due" class="change-due"></div>
+            
             <div class="cash-register-container">
                 <div class="display-price">
-                    <div class="cash-register-display" id="register-display"><span id="total-cost"></span></div>
+                    <div class="cash-register-display" id="register-display"><span id="total-cost">Total: $1.87</span></div>
                     <div class="cash-register-neck"></div>
                 </div>
-                
                 <div class="cash-register-body">
-                    <div class="cash-drawer" id="cash-drawer" ></div><!--the cash drawer display that shows what is inside the cash drawer-->
+                    <div class="cash-drawer" id="cash-drawer"></div><!--the cash drawer display that shows what is inside the cash drawer-->
+                    <div class="button-container">
+                        <div class="button"></div>
+                        <div class="button"></div>
+                        <div class="button"></div>
+                        <div class="button"></div>
+                        <div class="button"></div>
+                        <div class="button"></div>
+                        <div class="button"></div>
+                        <div class="button"></div>
+                        <div class="button"></div>
+                        <div class="button"></div>
+                        <div class="button last"></div>
+                    </div>
                 </div>
-                <div class="drawer-opener"></div>
+
+                <div class="drawer-opener">
+                    <div class="handle"></div>
+                </div>
+                <div id="change-due" class="change-due"></div>
+                
                 
             </div>
         </main>

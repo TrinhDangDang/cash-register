@@ -11,6 +11,27 @@
     width: 300px;
 }
 
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+#cash {
+    width: 300px;
+    margin-bottom: 20px;
+}
+button {
+    background-color: orange;
+    border: 7px solid black;
+    border-radius: 11px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
 main {
     display: flex;
     align-items: center;
@@ -20,11 +41,11 @@ main {
 }
 
 
-
 .change-due {
     height: 400px;
     width: 300px;
     background-color: aliceblue;
+    margin-top: 20px;
     display: none;
 }
 
@@ -42,7 +63,9 @@ h1 {
     flex-direction: column;
     width: 135px;
     margin-left: auto;
-    
+    margin-right: 25px;
+    position: relative;
+    top: 20px;
 }
 .cash-register-display{
     background-color:  orange; 
@@ -50,27 +73,98 @@ h1 {
     height: 111px;
     display: flex;
     border: 10px solid black;
-    border-radius: 10px;
-    
+    border-radius: 15px; /*to apply border radius to the inner edge of a thick border, give it round corner, just have to set the border radius to be larger than the thickness or the border */
 }
 #total-cost {
-    background-color: white;
-    height: 80px;
-    width: 104px;
+    background-color: RGB(237, 244, 250);
+    height: 82px;
+    width: 106px;
     margin: auto;
     border: 10px solid black;
-    border-radius: 6px;
+    border-radius: 5px; 
     
 }
 
+
 .cash-register-neck{
-    width: 30px;
-    height: 30px;
-    background-color: brown;
+    width: 48px;
+    height: 29px;
+    background-color: RGB(189, 111, 8);
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+    border-radius: 0 0 5px 5px;
+    background-image: linear-gradient(RGB(158, 93, 7),RGB(189, 111, 8));
+
+}
+.cash-register-body {
+    width: 300px;
+    height: 150px;
+    background-color: orange;
+    border-radius: 10px 10px 0 0;
+    border: 10px solid black;
+    display: flex;
+
+}
+
+.drawer-opener {
+    width: 300px;
+    height: 60px;
+    background-color: orange;
+    border-left:10px solid black;
+    border-right:10px solid black;
+    border-bottom:10px solid black;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .cash-drawer {
-    height: 200px;
-    width: 300px;
-    background-color: orange;
+    height: 120px;
+    width: 150px;
+    background-color: RGB(237, 244, 250);
+    position: relative;
+    left: 10px;
+    top: 5px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.handle {
+    height: 30px;
+    width: 120px;
+    background-color: brown;
+    border: 10px solid black;
+    border-radius: 5px;
+    background-image: linear-gradient(brown, RGB(224, 62, 62));
+    
+}
+.button-container{
+    display: grid;
+    position: relative;
+    width: 80px;
+    height: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    background-color: black;
+    gap: 6px;
+    padding: 10px;
+    top: 20px;
+    left: 35px;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: aliceblue;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    cursor: pointer
+}
+.last{
+    width: 40px;
+    grid-column: span 2;
 }

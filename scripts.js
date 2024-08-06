@@ -22,6 +22,7 @@ function displayChange (status, change) {
     change.forEach(element => {
         changeDueDisplay.innerHTML += `<p>${element[0]}: $${element[1]}</p>`;
     }); 
+    
 }
 
 function calculateMoneyChanges(){
@@ -65,7 +66,8 @@ function calculateMoneyChanges(){
     }
 console.log(result)
 displayChange(result.status, result.change) ;
-amountInDrawerUpdate(result.change)
+amountInDrawerUpdate(result.change);
+changeDueDisplay.style.display = 'block';
 }
 
 
@@ -111,6 +113,7 @@ purchaseBtn.addEventListener('click', ()=> {
 moneyInput.addEventListener('keydown', (event) => {
     if (event.key === 'Enter'){
         calculateMoneyChanges();
+
     }
 })
 
